@@ -1,11 +1,11 @@
 body,
 html {
-  background-color: #fff;
+  background-color: #e3e5d8;
   font-family: "Verdana", Geneva, Tahoma, sans-serif !important;
 }
 
 html {
-  background-color: #fff;
+  background-color: #e3e5d8;
 }
 
 input:focus,
@@ -40,7 +40,7 @@ html {
 }
 
 .hdr {
-  background: #0079bf;
+  background: #afc1b6;
   color: white;
   overflow: hidden;
   z-index: 10;
@@ -89,7 +89,7 @@ html {
 }
 
 .list {
-  background: #e5eff5;
+  background: #355; /* backround colour of the list */
   padding: 10px 15px;
   margin-right: 20px;
   border-radius: 3px;
@@ -120,7 +120,7 @@ html {
   font-size: 15px;
   line-height: 18px;
   font-weight: bold;
-  color: #172b4d;
+  color: #e3e5d8;
   margin: 10px 0;
 }
 .list-cards {
@@ -156,8 +156,8 @@ html {
 .list-form__submit {
   width: 100%;
   font-size: 16px;
-  color: #fff;
-  background: #0079dd70;
+  color: #000;
+  background: #afc1b6;
   padding: 8px 20px;
   border-radius: 3px;
   transition: all 0.5s ease-in;
@@ -167,11 +167,11 @@ html {
 }
 .card-form__submit:hover,
 .list-form__submit:hover {
-  background: #0079dd;
+  background: #648374;
 }
 
 .card {
-  background-color: #fff;
+  background-color: #fff; /* card colour */
   border-bottom: 1px solid #ccc;
   border-radius: 3px;
   cursor: pointer;
