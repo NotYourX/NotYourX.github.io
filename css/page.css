@@ -29,13 +29,6 @@ html {
   height: 100%;
 }
 
-body {
-  background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/cabe2460fbe75764c50f9adff950be00/board-back.jpg) top right no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-  background-size: 100% 100%;
-}
-
 .container-fluid {
   width: 100%;
   margin: 0 auto;
