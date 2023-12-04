@@ -63,6 +63,7 @@ html {
   padding: 5px;
   border-radius: 3px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .hdr__right {
   width: 50%;
@@ -75,6 +76,19 @@ html {
   text-decoration: none;
   color: #fff;
 }
+
+.hdr__left {
+    width: 50%;
+    text-align: left;
+    float: left;
+    padding: 20px 0;
+    color: #fff;
+}
+.hdr__left > a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
 
 #board-collection {
   margin-top: 40px;

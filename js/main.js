@@ -414,3 +414,13 @@ const mocking = (function() {
   
   document.addEventListener("DOMContentLoaded", mocking.init);
   
+  document.getElementById("theme-change").addEventListener("onclick", () =>function(){
+    // if(window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue("background-color") == "#e3e5d8"){
+        document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#101916";
+    // }
+    // else{
+    //     document.getElementsByTagName("html")[0].style.backgroundColor = "#e3e5d8";
+    //     document.getElementsByTagName("body")[0].style.backgroundColor = "#e3e5d8";
+    // }
+  })
