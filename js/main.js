@@ -413,7 +413,7 @@ const mocking = (function() {
   //Onloading the document render the board.The code starts from here
   
   document.addEventListener("DOMContentLoaded", mocking.init); 
-  document.getElementById("theme-change").addEventListener("onclick", () =>function(){
+  document.getElementById("theme-change").addEventListener("click", () =>function(){
     alert(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color"));
     if(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color") == "#e3e5d8"){
         // document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
