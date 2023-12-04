@@ -47,6 +47,7 @@ html {
   z-index: 10;
   max-height: 80px;
   margin: 0 auto;
+  /* width: 100%; */
 }
 
 .hdr__img {
@@ -99,7 +100,6 @@ html {
   display: flexbox;
   flex-wrap: wrap;
   flex-direction: row;
-  flex: content;
   /* align-items: center; */
   /* text-align: center; */
   padding-left: 10px;
@@ -139,6 +139,7 @@ html {
   max-width: 270px;
   cursor: pointer;
   transition: all 2s ease-out;
+  width:100%;
 }
 .list-title {
   min-height: 19px;
@@ -202,6 +203,7 @@ html {
   min-height: 20px;
   position: relative;
   overflow: auto;
+  height: 100%;
   padding: 6px 8px 4px;
   transition: all 2s ease-out;
 }
@@ -283,4 +285,74 @@ html {
   flex-direction: row;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .hdr__right {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 20px 0;
+        color: #fff;
+    }
+    .hdr__right > a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .hdr__left {
+        width: 100%;
+        text-align: center;
+        /* align-items: center; */
+        float: ceneter;
+        padding: 20px 0;
+        color: #fff;
+    }
+    .hdr__left > a {
+        text-decoration: none;
+        color: #fff;
+        /* width: 100%; */
+    }
+    .hdr {
+        background: #afc1b6;
+        color: white;
+        overflow:hidden;
+        z-index: 10;
+        max-height: 100%;
+        margin: 0 auto;
+
+    }
+    .hdr__btn {
+        border: 1px solid #fff;
+        padding: 5px;
+        border-radius: 3px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 50px;
+        /* left: 50%; */
+    }
+    #board-collection {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex: content;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding-left: 10px;
+    }
+    
+    #board{
+        width: 100%;
+    
+        display: flexbox;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        
+    }
 }
