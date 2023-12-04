@@ -3,6 +3,8 @@ html {
   background-color: #e3e5d8;
   font-family: "Verdana", Geneva, Tahoma, sans-serif !important;
   margin: 0;
+  font-size: min(calc(.8em + 1vw),18px);
+ 
 }
 
 html {
