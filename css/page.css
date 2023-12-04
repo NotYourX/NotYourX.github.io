@@ -96,9 +96,12 @@ html {
 
 #board-collection {
   margin-top: 20px;
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
+  flex-direction: row;
+  flex: content;
   /* align-items: center; */
+  /* text-align: center; */
   padding-left: 10px;
 }
 
@@ -111,7 +114,7 @@ html {
 }
 
 .list {
-  background: #355; /* backround colour of the list */
+  background: #355245; /* backround colour of the list */
   padding: 10px 15px;
   margin-right: 20px;
   border-radius: 10px;
