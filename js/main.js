@@ -1,4 +1,4 @@
-const trello = (function() {
+const mocking = (function() {
     var createCard = {
       windowOverlay: document.getElementById("container-main"),
       node: document.getElementById("card-edit"),
@@ -87,15 +87,15 @@ const trello = (function() {
     }
   
     //This method will called on adding the list on the board
-    function addListTrello(board) {
+    function newList(board) {
       return function() {
         var titleInput = document.querySelector(".list-form__input");
   
-        document.querySelector(".list-form__submit").onclick = titleButtonClick;
+        document.querySelector(".list-form__submit").onclick = createListButton;
         board.titleFormNode.style.display = "block";
         titleInput.focus();
   
-        function titleButtonClick(evt) {
+        function createListButton(evt) {
           evt.preventDefault();
           var title = titleInput.value.trim(),
             index = board.lists.length - 1,
@@ -146,7 +146,7 @@ const trello = (function() {
         this.listsNode.appendChild(this.lists[i].node);
       }
       this.lists[this.lists.length - 1].node.appendChild(this.titleFormNode);
-      this.lists[this.lists.length - 1].titleNode.onclick = addListTrello(this);
+      this.lists[this.lists.length - 1].titleNode.onclick = newList(this);
       this.node.appendChild(this.titleNode);
       this.node.appendChild(this.listsNode);
     };
@@ -397,11 +397,11 @@ const trello = (function() {
     }
   
     var init = function() {
-      var title = "Business Launch",
+      var title = "My Board",
         board = new Board(title);
   
       board.render();
-      document.getElementById("sprint").appendChild(board.node);
+      document.getElementById("board-collection").appendChild(board.node);
       currentBoard = board;
     };
   
@@ -412,5 +412,5 @@ const trello = (function() {
   
   //Onloading the document render the board.The code starts from here
   
-  document.addEventListener("DOMContentLoaded", trello.init);
+  document.addEventListener("DOMContentLoaded", mocking.init);
   

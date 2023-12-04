@@ -76,7 +76,7 @@ html {
   color: #fff;
 }
 
-#sprint {
+#board-collection {
   margin-top: 40px;
 }
 
@@ -92,7 +92,7 @@ html {
   background: #355; /* backround colour of the list */
   padding: 10px 15px;
   margin-right: 20px;
-  border-radius: 3px;
+  border-radius: 10px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -148,9 +148,8 @@ html {
   box-shadow: none;
   border-bottom: none;
   font-size: 16px;
-  border-radius: 3px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 6px;
+  margin-bottom: 8px;
 }
 .card-form__submit,
 .list-form__submit {
@@ -159,11 +158,9 @@ html {
   color: #000;
   background: #afc1b6;
   padding: 8px 20px;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: all 0.5s ease-in;
   cursor: pointer;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 .card-form__submit:hover,
 .list-form__submit:hover {
@@ -173,7 +170,7 @@ html {
 .card {
   background-color: #fff; /* card colour */
   border-bottom: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
   margin-bottom: 6px;
   max-width: 300px;
