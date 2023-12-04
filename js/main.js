@@ -418,9 +418,12 @@ const mocking = (function() {
     if(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color") == "rgb(227, 229, 216)"){
         document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#101916";
+        document.getElementsByClassName("hdr")[0].style.backgroundColor = "#355245";
     }
     else{
         document.getElementsByTagName("html")[0].style.backgroundColor = "#e3e5d8";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#e3e5d8";
+        document.getElementsByClassName("hdr")[0].style.backgroundColor = "#afc1b6";
+
     }
   });
