@@ -214,13 +214,13 @@ html {
 #card-edit__delete {
   float: left;
   width: 70px;
-  background-color: #7b1401;
+  background-color: #dc3636;
   color: #fff;
 }
 #card-edit__submit {
   float: right;
   width: 70px;
-  background-color: #5aa3f2;
+  background-color: #648374;
   color: #fff;
 }
 #card-edit__bttn {
