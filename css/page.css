@@ -97,6 +97,7 @@ html {
 #board-collection {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   /* align-items: center; */
   padding-left: 10px;
 }
