@@ -412,15 +412,15 @@ const mocking = (function() {
   
   //Onloading the document render the board.The code starts from here
   
-  document.addEventListener("DOMContentLoaded", mocking.init);
-  
+  document.addEventListener("DOMContentLoaded", mocking.init); 
+  alert(window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue("background-color"));
   document.getElementById("theme-change").addEventListener("onclick", () =>function(){
-    // if(window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue("background-color") == "#e3e5d8"){
-        document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
+    if(window.getComputedStyle(document.getElementsByTagName("html")[0]).getPropertyValue("background-color") == "#e3e5d8"){
+        // document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#101916";
-    // }
+    }
     // else{
     //     document.getElementsByTagName("html")[0].style.backgroundColor = "#e3e5d8";
     //     document.getElementsByTagName("body")[0].style.backgroundColor = "#e3e5d8";
     // }
-  })
+  });
