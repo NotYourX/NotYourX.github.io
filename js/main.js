@@ -414,9 +414,9 @@ const mocking = (function() {
   
   document.addEventListener("DOMContentLoaded", mocking.init); 
   (document.getElementById("theme-change")).addEventListener("click", function(){
-    alert(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color"));
-    if(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color") == "#e3e5d8"){
-        document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
+    // alert(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color"));
+    if(window.getComputedStyle(document.getElementsByTagName("body")[0]).getPropertyValue("background-color") == "rgb(227, 229, 216)"){
+        // document.getElementsByTagName("html")[0].style.backgroundColor = "#101916";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#101916";
     }
     // else{
