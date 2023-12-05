@@ -154,7 +154,7 @@ html {
 
 .card-form,
 .list-form {
-  /* transition: all 2s ease-out; */
+  transition: all 2s ease-out;
 }
 .card-form__input,
 .list-form__input {
@@ -212,7 +212,7 @@ html {
   width: 20vw;
   z-index: 15;
   top: 3rem;
-  left: 2rem;
+  left: 35vw;
   /* margin: 0px 0 0 -300px; */
   padding: 4rem;
   border-radius: 10px;
@@ -220,8 +220,10 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  justify-content: center;
   opacity: 0.9;
 }
+
 #card-edit__close {
   float: right;
   position: absolute;
@@ -296,7 +298,7 @@ html {
   margin-bottom: 0.8rem;
   padding-bottom: 0.8rem;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
 }
 
 .main{
@@ -325,6 +327,27 @@ html {
         flex-direction: row;
         justify-content: center;
     }
+
+    #card-edit {
+        /* display: flex; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #card-edit__delete {
+        float: center;
+        margin-right: 0.2rem;
+        
+    }
+    #card-edit__submit {
+        float: center;
+        margin-left: 0.2rem;
+        
+    }
+    #card-edit__input--bttn{
+        display: flex;
+        align-content: center;
+    } 
 }
 
 
@@ -394,6 +417,5 @@ html {
         justify-content: center;
     }
 
-    
+      
 }
-
