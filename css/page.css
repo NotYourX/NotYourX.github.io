@@ -54,24 +54,16 @@ html {
   margin: 0 auto;
 }
 
-.hdr__img {
-  padding: 10px 0;
-  max-height: 60px;
-  max-width: 300px;
-  float: left;
-  width: 50%;
-  cursor: pointer;
-}
-
 .hdr__btn {
   border: 1px solid var(--white);
   padding: 5px;
   border-radius: 3px;
   margin-right: 10px;
   margin-left: 10px;
+  cursor: pointer;
+
 }
 .hdr__right {
-
   text-align: right;
   float: right;
   padding: 20px 0;
@@ -86,6 +78,7 @@ html {
     text-align: left;
     float: left;
     padding: 20px 0;
+    margin-left: 1rem;
     color: var(--white);
 }
 .hdr__left > a {
