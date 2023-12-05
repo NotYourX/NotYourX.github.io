@@ -305,13 +305,13 @@ html {
     margin-top: 5rem;
 }
 
-@media screen and (max-width: 1100px) {  
+@media screen and (max-width: 69rem) {  
     .main{
         margin-top: 6rem;
     }
 }
 
-@media screen and (max-width: 800px) {  
+@media screen and (max-width: 50rem) {  
     #board-collection {
         text-align: center;
         flex-wrap: wrap;
@@ -352,7 +352,7 @@ html {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
     .main{
         margin-top: 8rem;
     }
