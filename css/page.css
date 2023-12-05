@@ -152,12 +152,12 @@ html {
   flex: 1 1 auto;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 2s ease-out;
+  /* transition: all 2s ease-out; */
 }
 
 .card-form,
 .list-form {
-  transition: all 2s ease-out;
+  /* transition: all 2s ease-out; */
 }
 .card-form__input,
 .list-form__input {
@@ -169,7 +169,7 @@ html {
   border: 1px solid #ddd;
   box-shadow: none;
   border-bottom: none;
-  /* font-size: 1rem; */
+  font-size: 1rem;
   border-radius: 10px;
   margin-bottom: 8px;
 }
@@ -198,10 +198,10 @@ html {
   max-width: 300px;
   min-height: 20px;
   position: relative;
-  overflow: auto;
+  overflow: visible;
   height: 100%;
   padding: 6px 8px 4px;
-  transition: all 2s ease-out;
+  /* transition: all 2s ease-out; */
 }
 
 .card div {
@@ -220,13 +220,16 @@ html {
   border-radius: 10px;
   background-color: #ccc;
   justify-content: center;
-  opacity: 0.8;
+  align-items: center;
+  text-align: center;
+  opacity: 0.9;
 }
 #card-edit__close {
   float: right;
   position: absolute;
   top: 1rem;
   right: 1rem;
+  opacity: 0.95;
   cursor: pointer;
 }
 #card-edit__close--img {
@@ -238,12 +241,16 @@ html {
   width: 5rem;
   background-color: #dc3636;
   color: var(--white);
+  opacity: 0.95;
+  cursor: pointer;
 }
 #card-edit__submit {
   float: right;
   width: 70px;
   background-color: #648374;
   color: var(--white);
+  opacity: 0.95;
+  cursor: pointer;
 }
 #card-edit__bttn {
   margin-bottom: 10px;
