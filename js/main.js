@@ -20,8 +20,8 @@ const mocking = (function() {
   
     //This method will show the edited text on the card on submit
     createCard.show = function() {
-      createCard.windowOverlay.style.display = "block";
-      createCard.node.style.display = "block";
+      createCard.windowOverlay.style.display = "flex";
+      createCard.node.style.display = "flex";
     };
   
     //This method will submit the edited text

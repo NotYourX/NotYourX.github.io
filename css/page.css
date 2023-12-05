@@ -11,7 +11,7 @@ html {
   background-color: var(--offWhite);
   font-family: "Verdana", Geneva, Tahoma, sans-serif !important;
   margin: 0;
-  font-size: clamp(14px,1.5vw,1.2rem);
+  font-size: clamp(14px,1.5vw,1.1rem);
 }
 
 input:focus,
@@ -169,8 +169,8 @@ html {
   border: 1px solid #ddd;
   box-shadow: none;
   border-bottom: none;
-  font-size: 16px;
-  border-radius: 6px;
+  /* font-size: 1rem; */
+  border-radius: 10px;
   margin-bottom: 8px;
 }
 .card-form__submit,
@@ -181,7 +181,7 @@ html {
   background: var(--ligthGreen);
   padding: 8px 20px;
   border-radius: 10px;
-  transition: all 0.5s ease-in;
+  /* transition: all 0.5s ease-in; */
   cursor: pointer;
 }
 .card-form__submit:hover,
@@ -211,29 +211,31 @@ html {
 #card-edit {
   display: none;
   position: absolute;
-  width: 600px;
+  width: 20vw;
   z-index: 15;
-  top: 50px;
-  left: 50%;
-  margin: 0px 0 0 -300px;
-  padding: 50px;
-  border-radius: 3px;
+  top: 3rem;
+  left: 2rem;
+  /* margin: 0px 0 0 -300px; */
+  padding: 4rem;
+  border-radius: 10px;
   background-color: #ccc;
+  justify-content: center;
+  opacity: 0.8;
 }
 #card-edit__close {
   float: right;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 1rem;
+  right: 1rem;
   cursor: pointer;
 }
 #card-edit__close--img {
-  width: 20px;
-  height: 20px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 #card-edit__delete {
   float: left;
-  width: 70px;
+  width: 5rem;
   background-color: #dc3636;
   color: var(--white);
 }
@@ -248,22 +250,28 @@ html {
 }
 #card-edit__input--label {
   display: inline-block;
-  width: 100px;
-  margin-right: 20px;
+  width: 6.2rem;
+  margin-right: 1.2rem;
+  padding-bottom: .8rem;
 }
-#card-edit__input--title {
-  width: 300px;
+#card-edit__title {
+  width: 16vw;
+
+}
+
+#card-edit__input > input{
+    margin-bottom: 1rem;
 }
 
 #board__title {
   background: #0b568b40;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: var(--white);
   padding: 9px 15px;
   display: inline-block;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 #board__canvas {
   -webkit-box-align: start;
